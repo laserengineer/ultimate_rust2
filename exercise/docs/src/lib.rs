@@ -1,21 +1,18 @@
 // 1. Thank you for volunteering to document our pumpkin library! Let's start by grabbing the first
 // paragraph from https://en.wikipedia.org/wiki/Pumpkin and pasting it as our module-level
 // documentation. Hint: Use inner-documentation comments.
+
 //!A pumpkin, in English-language vernacular, is a cultivated winter squash in the genus Cucurbita.
 //!The term is most commonly applied to round, orange-colored squash varieties.
 //!Although it does not possess a scientific definition and may be used in reference to many different squashes of varied appearance
 //!
 //! ![Pumpkin Sample Image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg)
 
-
-
 // Once you've got the documentation here, run `cargo doc --no-deps --open` and take a look!
 
 // 2. What about an image!? Add an image of a pumpkin to the end of the module-level documentation.
 // The markdown format is ![some alt text](https://url-to-the-image.png)
 // Here's the image to link to: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg
-
-
 
 // 3. Document the Pumpkin struct.
 // - The description on the index page should be "Big orange thing"
@@ -24,11 +21,10 @@
 // - Document the "roundness" field, explaining that it is a percentage
 // - Document the "orangeness" field, explaining that it is a number from 8 to 27
 
-
 /// Big orange thing
-/// 
+///
 /// # Recipes
-/// 
+///
 /// Explain that recipes will be coming soon
 pub struct Pumpkin {
     /// `roundness` is a percentage
