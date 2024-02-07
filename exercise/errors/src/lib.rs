@@ -9,12 +9,23 @@
 // (3) Don't expose error types other than your own (not going to be a problem for this exercise)
 // (4) Make your enum non-exhaustive
 // (5) Implement the Debug, Display, and Error traits
-// (5b) You can use thiserror's `Error` macro to derive the Display and Error traits
+// (5b) You can use this error's `Error` macro to derive the Display and Error traits
 //
 // Once you have completed defining the error type correctly, you should be able to run
 // `cargo build --lib` without any build errors or warnings. Then go to main.rs and continue with #2
+use thiserror::Error;
 
-// pub enum DolphinError...
+#[non_exhaustive]
+#[derive(Debug, Error)]
+
+pub enum DolphinError {
+    #[error("This dolphin is hungry")]
+    Hungry,
+    #[error("This dolphin is too young")]
+    TooYoung,
+    #[error("The dolphin's name is too long and annoying to say")]
+    LongName,
+}
 
 pub struct Dolphin {
     pub name: String,
